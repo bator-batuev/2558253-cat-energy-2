@@ -12,8 +12,15 @@
 <body class="page__body">
   <header class="page__header header">
     <a class="header__logo logo" href="index.html" aria-current="page">
-      <img class="logo__img" src="#" width="33" height="38" alt="Логотип сайта">
-      <img class="logo__text" src="#" width="101" height="18" lang="en" alt="Cat Energy">
+      <picture>
+        <source media="(min-width: 1260px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+        <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
+      </picture>
+      <picture>
+        <source media="(min-width: 1280px)" srcset="images/logo-text.svg" type="image/svg+xml" width="118" height="21">
+        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" lang="en" alt="Cat Energy">
+      </picture>
     </a>
     <nav class="header-nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -37,7 +44,12 @@
     <section class="hero">
       <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <img class="hero__img" src="#" width="280" height="270" alt="Упаковка Cat Energy со вкусом курицы 500 г">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/index-can-tablet@1x.webp, images/index-can-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
+        <source media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png 2x" type="image/png" width="709" height="609">
+        <source srcset="images/index-can-mobile@1x.webp, images/index-can-mobile@2x.webp 2x" type="image/webp" width="280" height="270">
+        <img class="hero__img" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Cat Energy со вкусом курицы 500 г">
+      </picture>
       <a class="hero__link button" href="#">Подобрать программу</a>
     </section>
 
