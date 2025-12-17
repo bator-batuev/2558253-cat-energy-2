@@ -1,6 +1,12 @@
 // .supplement-card {}
-// .supplement-card__title {}
-// .supplement-card__info-wrapper {}
+.supplement-card__title {
+  @include font-custom($font-secondary, 16px, 400, 16px, $text-color-card-title);
+  text-transform: uppercase;
+}
+
+.supplement-card__info-wrapper {
+  line-height: 14px;
+}
 // .supplement-card__info-title {}
 // .supplement-card__info-description {}
 // .supplement-card__button {}

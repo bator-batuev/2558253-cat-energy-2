@@ -1,4 +1,6 @@
 // .subscription {}
 // .subscription__title {}
-// .subscription__text {}
+.subscription__text {
+  @include font-custom($font-secondary, 16px, 400, 24px, $text-color-secondary);
+}
 // .subscription__form {}

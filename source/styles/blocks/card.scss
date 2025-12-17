@@ -1,11 +1,24 @@
 // .card {}
 // .card__link-img {}
 // .card__img {}
-// .card__link {}
-// .card__title {}
-// .card__info {}
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  @include font-custom($font-secondary, 16px, 400, 20px, $text-color-card-title);
+  text-transform: uppercase;
+}
+
+.card__info {
+  font-size: 12px;
+  line-height: 16px;
+}
 // .card__info-wrapper {}
 // .card__info-title {}
-// .card__info-description {}
+.card__info-description {
+  font-size: 12px;
+  line-height: 16px;
+}
 // .card__info-description--last {}
 // .card__button {}

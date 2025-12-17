@@ -1,3 +1,8 @@
 // .programs {}
-// .programs__list {}
-// .programs__item {}
+.programs__list {
+  @include list-reset;
+}
+
+.programs__item {
+  background-color: $bg-color-secondary;
+}

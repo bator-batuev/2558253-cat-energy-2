@@ -1,5 +1,16 @@
-// .hero {}
-// .hero__title {}
-// .hero__text {}
+.hero {
+  background-color: $bg-color-basic;
+}
+
+.hero__title {
+  @include font-custom($font-secondary, 36px, 400, 36px, $text-color-tertiary);
+  text-align: center;
+}
+
+.hero__text {
+  @include font-custom($font-secondary, 14px, 400, 14px, $text-color-tertiary);
+  text-transform: uppercase;
+  text-align: center;
+}
 // .hero__img {}
 // .hero__link {}

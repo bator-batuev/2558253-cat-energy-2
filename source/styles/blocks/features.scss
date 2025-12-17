@@ -1,5 +1,10 @@
 // .features {}
-// .features__title {}
-// .features__list {}
+.features__title {
+  @include font-custom($font-secondary, 36px, 400, 40px, $text-color-secondary);
+}
+
+.features__list {
+  @include list-reset;
+}
 // .features__item {}
 // .features__description {}

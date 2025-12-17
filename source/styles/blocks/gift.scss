@@ -1,2 +1,10 @@
-// .gift {}
-// .gift__text {}
+.gift {
+  background-color: $bg-color-basic;
+}
+
+.gift__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-color-tertiary;
+  text-align: center;
+}
