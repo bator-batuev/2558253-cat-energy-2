@@ -1,0 +1,11 @@
+.programs {
+  padding: 0 20px;
+}
+
+.programs__list {
+  @include list-reset;
+}
+
+.programs__item {
+  background-color: $bg-color-secondary;
+}

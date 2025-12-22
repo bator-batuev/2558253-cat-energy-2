@@ -26,7 +26,7 @@
         <img class="logo__text" src="images/logo-text.svg" width="101" height="18" lang="en" alt="Cat Energy">
       </picture>
     </a>
-    <nav class="header-nav main-nav">
+    <nav class="header__nav main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
@@ -46,10 +46,10 @@
 
   <main class="main-container">
     <section class="hero">
-      <h1 class="hero__title">Функциональное питание для котов</h1>
+      <h1 class="hero__title">Функциональное<br> питание для котов</h1>
       <p class="hero__text">Занялся собой? Займись котом!</p>
       <picture>
-        <source media="(min-width: 768px)" srcset="images/hero/hero-can-tablet@1x.webp 1x, images/hero-can-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
+        <source media="(min-width: 768px)" srcset="images/hero/hero-can-tablet@1x.webp 1x, images/hero/hero-can-tablet@2x.webp 2x" type="image/webp" width="709" height="609">
         <source media="(min-width: 768px)" srcset="images/hero/hero-can-tablet@1x.png 1x, images/hero-can-tablet@2x.png 2x" type="image/png" width="709" height="609">
         <source srcset="images/hero/hero-can-mobile@1x.webp 1x, images/hero/hero-can-mobile@2x.webp 2x" type="image/webp" width="280" height="270">
         <img class="hero__img" src="images/hero/hero-can-mobile@1x.png" srcset="images/hero/hero-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка Cat Energy со вкусом курицы 500 г">
@@ -60,12 +60,12 @@
     <section class="programs">
       <h2 class="visually-hidden">Программы питания</h2>
       <ul class="programs__list">
-        <li class="programs__item program slim-program">
+        <li class="programs__item program">
           <h3 class="program__title">Похудение</h3>
           <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог Slim</a>
         </li>
-        <li class="programs__item program pro-program">
+        <li class="programs__item program">
           <h3 class="program__title">Набор массы</h3>
           <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="program__link" href="#">Каталог Pro</a>
@@ -101,11 +101,11 @@
       <dl class="example__list results">
         <div class="results__item">
           <dt class="results__value">5 кг</dt>
-          <dd class="results__description">Снижение веса</dd>
+          <dd class="results__description">Снижение<br> веса</dd>
         </div>
         <div class="results__item">
           <dt class="results__value">60 дней</dt>
-          <dd class="results__description">Затрачено времени</dd>
+          <dd class="results__description">Затрачено<br> времени</dd>
         </div>
       </dl>
       <div class="example__cost">
@@ -135,8 +135,10 @@
 
   <footer class="page__footer footer">
     <section class="footer__contacts contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
       <div class="contacts__map">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" type="image/webp" width="1440" height="400">

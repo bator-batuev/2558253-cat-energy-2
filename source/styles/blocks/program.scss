@@ -1,0 +1,11 @@
+// .program {}
+.program__title {
+  @include font-custom($font-secondary, 24px, 400, 37px, $text-color-secondary);
+  text-transform: uppercase;
+}
+// .program__description {}
+.program__link {
+  @include font-custom($font-secondary, 16px, 400, 16px, $text-color-secondary);
+  text-transform: uppercase;
+  text-decoration: none;
+}

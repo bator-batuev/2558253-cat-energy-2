@@ -1,0 +1,39 @@
+.hero {
+  background-image:
+    linear-gradient(rgba($bg-color-basic, 0.85)),
+    image-set(url("../../images/hero/hero-background-mobile@1x.webp") 1x type("image/webp"),
+    url("../../images/hero/hero-background-mobile@2x.webp") 2x type("image/webp"),
+    url("../../images/hero/hero-background-mobile@1x.jpg") 1x type("image/jpeg"),
+    url("../../images/hero/hero-background-mobile@2x.jpg") 2x type("image/jpeg")),
+    linear-gradient(#504f54, #424246);
+  background-repeat: no-repeat;
+  background-position: 0 0, top, 0 0;
+  background-size: 100% 63%, 320px 302px, 100% 63%;
+  padding: 27px 20px 0;
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  @include font-custom($font-secondary, 36px, 400, 36px, $text-color-tertiary);
+  text-align: center;
+  margin: 0 0 25px;
+}
+
+.hero__text {
+  @include font-custom($font-secondary, 14px, 400, 14px, $text-color-tertiary);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.hero__img {
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 270px;
+}
+
+.hero__link {
+  margin-top: 3px;
+  padding: 10px 64px;
+}

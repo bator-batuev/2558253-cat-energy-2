@@ -1,0 +1,9 @@
+.button {
+  @include font-custom($font-secondary, 16px, 400, 20px, $text-color-tertiary);
+  @include button;
+
+  &--secondary {
+    background-color: $bg-color-secondary;
+    color: $text-color-primary;
+  }
+}
