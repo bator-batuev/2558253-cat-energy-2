@@ -1,4 +1,8 @@
 // .contacts {}
+.contacts__wrapper {
+  padding: 0 20px;
+}
+
 .contacts__title {
   @include font-custom($font-secondary, 16px, 400, 20px, $text-color-secondary);
   text-transform: uppercase;
