@@ -1,9 +1,33 @@
 // .main-nav {}
-// .main-nav__toggle {}
+.main-nav__toggle--close {
+  background-image: url("../../icons/stack.svg#burger-close");
+}
+
+.main-nav__toggle {
+  background-image: url("../../icons/stack.svg#burger-open");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .main-nav__list {
   @include list-reset;
+  display: none;
 }
-// .main-nav__item {}
+
+.main-nav__item {
+  padding: 22px 0 24px;
+  border-top: 1px solid #e6e6e6;
+  text-align: center;
+}
+
 .main-nav__link {
   @include font-custom($font-secondary, 20px, 400, 20px, $text-color-secondary);
   text-transform: uppercase;
