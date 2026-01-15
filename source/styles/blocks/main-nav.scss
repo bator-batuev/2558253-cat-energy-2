@@ -1,7 +1,4 @@
 // .main-nav {}
-.main-nav__toggle--close {
-  background-image: url("../../icons/stack.svg#burger-close");
-}
 
 .main-nav__toggle {
   background-image: url("../../icons/stack.svg#burger-open");
@@ -15,11 +12,20 @@
   position: absolute;
   top: 20px;
   right: 20px;
+
+  &--active {
+    background-image: url("../../icons/stack.svg#burger-close");
+  }
 }
 
 .main-nav__list {
   @include list-reset;
   display: none;
+  transition: all 0.3s ease;
+
+  &--active {
+    display: block;
+  }
 }
 
 .main-nav__item {
@@ -32,5 +38,17 @@
   @include font-custom($font-secondary, 20px, 400, 20px, $text-color-secondary);
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
-// .main-nav__link--current {}
+
+.main-nav__link--current {
+  border-bottom: 2px solid $bg-color-basic;
+}

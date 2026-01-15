@@ -9,6 +9,16 @@
   background-repeat: no-repeat;
   width: 100%;
   height: 290px;
+  padding: 60px 50px 43px;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/gift.svg");
+    width: 78px;
+    height: 80px;
+    display: block;
+    margin: 0 auto 48px;
+  }
 }
 
 .gift__text {
@@ -16,5 +26,4 @@
   line-height: 20px;
   color: $text-color-tertiary;
   text-align: center;
-  padding: 187px 60px 0;
 }
