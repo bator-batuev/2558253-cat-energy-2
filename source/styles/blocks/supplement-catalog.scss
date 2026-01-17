@@ -2,5 +2,6 @@
 // .supplement-catalog__title {}
 .supplement-catalog__list {
   @include list-reset;
+  margin: 0 0 35px;
 }
 // .supplement-catalog__gift {}

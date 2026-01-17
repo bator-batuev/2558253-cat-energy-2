@@ -1,17 +1,27 @@
 .example {
   background-color: #eaeaea;
-  padding: 0 20px;
+  padding: 0 20px 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .example__title {
   @include font-custom($font-secondary, 36px, 400, 40px, $text-color-secondary);
 }
 // .example__description {}
-// .example__list {}
+.example__list {
+  @include list-reset;
+  margin: 0 0 20px;
+}
+
 .example__cost {
   @include font-custom($font-secondary, 14px, 400, 20px, $text-color-secondary);
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
 }
 // .example__cost-description {}
 // .example__cost-value {}
-// .example__slider {}
+.example__slider {
+  margin: 0 auto;
+}

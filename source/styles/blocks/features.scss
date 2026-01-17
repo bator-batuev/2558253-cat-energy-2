@@ -1,13 +1,51 @@
 .features {
   padding: 0 20px;
+  margin-bottom: 50px;
 }
 
 .features__title {
   @include font-custom($font-secondary, 36px, 400, 40px, $text-color-secondary);
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .features__list {
   @include list-reset;
 }
-// .features__item {}
+
+.features__item {
+  display: flex;
+  gap: 20px;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.features__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $bg-color-basic;
+  background-position: 50%;
+  background-size: 30px 32px;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.features__item--leaf::before {
+  background-image: url("../../icons/leaf.svg");
+}
+
+.features__item--water::before {
+  background-image: url("../../icons/boiling-pot.svg");
+}
+
+.features__item--cutlery::before {
+  background-image: url("../../icons/cutlery.svg");
+}
+
+.features__item--alarm::before {
+  background-image: url("../../icons/alarm-clock.svg");
+}
 // .features__description {}

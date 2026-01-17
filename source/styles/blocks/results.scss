@@ -1,8 +1,27 @@
-// .results {}
-// .results__item {}
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.results__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .results__value {
   @include font-custom($font-secondary, 24px, 400, 24px, $text-color-secondary);
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  padding: 14px;
+  width: 124px;
+  text-align: center;
 }
 
 .results__description {
@@ -10,4 +29,8 @@
   line-height: 12px;
   text-transform: lowercase;
   text-align: center;
+  margin: -17px auto 0;
+  width: min-content;
+  padding: 0 20px;
+  background-color: #eaeaea;
 }

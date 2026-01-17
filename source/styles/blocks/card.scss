@@ -1,4 +1,19 @@
-// .card {}
+.card {
+  &--last {
+    position: relative;
+    padding-top: 80px;
+  }
+
+  &--last::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/plus.svg");
+    width: 30px;
+    height: 30px;
+    top: 40px;
+    left: 50%;
+  }
+}
 // .card__link-img {}
 // .card__img {}
 .card__link {
@@ -21,4 +36,4 @@
   line-height: 16px;
 }
 // .card__info-description--last {}
-// .card__button {}
+//.card__button {}

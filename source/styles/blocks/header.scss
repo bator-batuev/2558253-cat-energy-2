@@ -1,3 +1,10 @@
-// .header {}
-// .header__logo {}
+.header {
+  padding: 13px 20px 0;
+}
+
+.header__logo {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+}
 // .header__nav {}

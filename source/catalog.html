@@ -20,10 +20,7 @@
         <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
         <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
       </picture>
-      <picture>
-        <source media="(min-width: 1280px)" srcset="images/logo-text.svg" type="image/svg+xml" width="118" height="21">
-        <img class="logo__text" src="images/logo-text.svg" width="101" height="18" lang="en" alt="Cat Energy">
-      </picture>
+      <img class="logo__text" src="images/logo-text.svg" width="101" height="18" lang="en" alt="Cat Energy">
     </a>
     <nav class="header-nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -54,7 +51,7 @@
             <picture>
               <source media="(min-width: 768px)" srcset="images/main-catalog/pro-chicken-500-tablet@1x.webp 1x, images/main-catalog/pro-chicken-500-tablet@2x.webp 2x" type="image/webp" width="200" height="210">
               <source media="(min-width: 768px)" srcset="images/main-catalog/pro-chicken-500-tablet@1x.png 1x, images/main-catalog/pro-chicken-500-tablet@2x.png 2x" type="image/png" width="200" height="210">
-              <source srcset="images//main-catalogpro-chicken-500-mobile@1x.webp 1x, images/main-catalog/pro-chicken-500-mobile@2x.webp 2x" type="image/webp" width="68" height="86">
+              <source srcset="images/main-catalog/pro-chicken-500-mobile@1x.webp 1x, images/main-catalog/pro-chicken-500-mobile@2x.webp 2x" type="image/webp" width="68" height="86">
               <img class="card__img" src="images/main-catalog/pro-chicken-500-mobile@1x.png" srcset="images/main-catalog/pro-chicken-500-mobile@2x.png 2x" width="68" height="86" alt="Cat Energy PRO со вкусом курицы 500 грамм">
             </picture>
           </a>
@@ -311,8 +308,10 @@
 
   <footer class="page__footer footer">
     <section class="footer__contacts contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
       <div class="contacts__map">
         <picture>
           <source media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" type="image/webp" width="1440" height="400">
@@ -351,6 +350,7 @@
       </a>
     </div>
   </footer>
+  <script src="scripts/index.js" defer></script>
 </body>
 
 </html>
