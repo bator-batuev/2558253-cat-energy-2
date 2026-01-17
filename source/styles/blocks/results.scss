@@ -1,6 +1,7 @@
 .results {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -30,6 +31,6 @@
   text-align: center;
   margin: -17px auto 0;
   width: min-content;
-  padding: 0 15px;
+  padding: 0 20px;
   background-color: #eaeaea;
 }
