@@ -14,4 +14,8 @@
 // .logo__img {}
 .logo__text {
   transform: translate(30px);
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    transform: none;
+  }
 }

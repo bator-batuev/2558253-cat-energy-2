@@ -3,15 +3,43 @@
   padding: 0 20px 40px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    background-color: transparent;
+    background-image: linear-gradient(to top, #eaeaea 0, #eaeaea 462px, transparent 462px);
+    padding: 45px 30px 101px;
+  }
 }
 
 .example__title {
   @include font-custom($font-secondary, 36px, 400, 40px, $text-color-secondary);
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
+    margin: 0;
+    padding-bottom: 60px;
+  }
 }
-// .example__description {}
+
+.example__description {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-primary, 16px, 400, 24px, $text-color-primary);
+    margin: 0;
+    padding-bottom: 55px;
+  }
+}
+
 .example__list {
   @include list-reset;
   margin: 0 0 20px;
+}
+
+.example__list-wrapper {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
 }
 
 .example__cost {
@@ -19,6 +47,14 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-secondary, 20px, 400, 20px, $text-color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+  }
 }
 // .example__cost-description {}
 // .example__cost-value {}

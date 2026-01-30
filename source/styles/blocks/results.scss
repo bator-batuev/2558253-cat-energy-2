@@ -4,6 +4,10 @@
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    gap: 43px;
+  }
 }
 
 .results__item {
@@ -22,6 +26,11 @@
   padding: 14px;
   width: 124px;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-secondary, 30px, 400, 37px, $text-color-secondary);
+    width: 150px;
+  }
 }
 
 .results__description {
@@ -33,4 +42,9 @@
   width: min-content;
   padding: 0 20px;
   background-color: #eaeaea;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-primary, 14px, 400, 14px, $text-color-primary);
+    background-color: $bg-color-primary;
+  }
 }

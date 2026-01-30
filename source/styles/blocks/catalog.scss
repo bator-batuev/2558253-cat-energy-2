@@ -1,4 +1,19 @@
 .catalog {
   padding: 27px 20px 0;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 65px 30px;
+  }
 }
-// .catalog__title {}
+
+.catalog__title {
+  margin: 0 0 40px;
+}
+
+.catalog__title.section-title {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
+    margin: 0;
+    padding-bottom: 87px;
+  }
+}

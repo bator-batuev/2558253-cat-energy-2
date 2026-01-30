@@ -1,2 +1,10 @@
 // .supplement-products {}
-// .supplement-products__item {}
+.supplement-products__item {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    border: 1px solid #cdcdcd;
+
+    &:not(:first-child) {
+      border-top: none;
+    }
+  }
+}

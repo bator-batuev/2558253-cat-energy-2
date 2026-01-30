@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    width: 560px;
+  }
 }
 
 .slider__thumb {

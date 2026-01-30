@@ -6,6 +6,10 @@
   @include list-reset;
 }
 
-.programs__item {
+.programs__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    margin-bottom: 30px;
+  }
 }

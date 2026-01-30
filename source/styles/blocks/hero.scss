@@ -11,12 +11,23 @@
   background-size: 100% 63%, 320px 302px, 100% 63%;
   padding: 27px 20px 0;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    background: 0 0;
+    position: relative;
+  }
 }
 
 .hero__title {
   @include font-custom($font-secondary, 36px, 400, 36px, $text-color-tertiary);
   text-align: center;
   margin: 0 0 25px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
+    text-align: left;
+    margin-left: 90px;
+  }
 }
 
 .hero__text {
@@ -24,6 +35,12 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 30px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-secondary, 20px, 400, 20px, $text-color-secondary);
+    text-align: left;
+    margin-left: 90px;
+  }
 }
 
 .hero__img {
@@ -31,9 +48,23 @@
   margin: 0 auto;
   width: 280px;
   height: 270px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    width: 709px;
+    height: 609px;
+  }
 }
 
 .hero__link {
   margin-top: 3px;
   padding: 10px 64px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    position: absolute;
+    content: "";
+    max-width: 250px;
+    width: 100%;
+    top: 250px;
+    left: 140px;
+  }
 }

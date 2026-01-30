@@ -1,10 +1,28 @@
 .header {
   padding: 13px 20px 0;
+
+  @media screen and (max-width: $tablet-width - 1) {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
 }
 
 .header__logo {
   display: flex;
   width: 50vw;
   justify-content: space-between;
+  margin-bottom: 14px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    gap: 13px;
+    justify-content: flex-start;
+    width: auto;
+    flex-shrink: 0;
+  }
 }
 // .header__nav {}

@@ -12,28 +12,98 @@
     height: 30px;
     top: 40px;
     left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: end;
+    background-image: linear-gradient(to bottom, transparent 81px, $bg-color-secondary 81px);
+
+    &--last {
+      background-image: none;
+      border: 2px solid $bg-color-secondary;
+      margin-top: 81px;
+      padding-top: 0;
+    }
+
+    &--last::before {
+      width: 60px;
+      height: 60px;
+    }
   }
 }
-// .card__link-img {}
+
+.card__link-img {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    width: 200px;
+    height: 210px;
+    align-self: center;
+    justify-content: center;
+  }
+}
 // .card__img {}
 .card__link {
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .card__title {
   @include font-custom($font-secondary, 16px, 400, 20px, $text-color-card-title);
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-custom($font-secondary, 20px, 400, 24px, $text-color-card-title);
+    text-align: center;
+    max-width: 135px;
+
+    &--last {
+      max-width: 170px;
+      margin: 0 auto 23px;
+    }
+  }
 }
 
 .card__info {
   font-size: 12px;
   line-height: 16px;
+  display: flex;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+    border-bottom: 1px solid #cdcdcd;
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
 }
-// .card__info-wrapper {}
-// .card__info-title {}
+
+.card__info-wrapper {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+//.card__info-title {}
+
 .card__info-description {
   font-size: 12px;
   line-height: 16px;
+  margin-left: auto;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+  }
 }
-// .card__info-description--last {}
+
+.card__info-description--last {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 32px;
+  }
+}
 //.card__button {}

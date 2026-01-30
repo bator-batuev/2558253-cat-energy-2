@@ -17,6 +17,17 @@
     border-radius: 50%;
     top: 20px;
   }
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    padding: 77px 52px 53px;
+
+    &::before {
+      width: 200px;
+      height: 211px;
+      top: 81px;
+      right: 63px;
+    }
+  }
 }
 
 .program--slim::after {
@@ -25,6 +36,14 @@
   height: 50px;
   top: 15px;
   left: 28px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    right: 93px;
+    left: auto;
+  }
 }
 
 .program--pro::after {
@@ -33,6 +52,14 @@
   height: 28px;
   top: 30px;
   left: 10px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    right: 29px;
+    left: auto;
+  }
 }
 
 .program__title {
@@ -40,12 +67,25 @@
   text-transform: uppercase;
   margin: 0;
   padding-left: 70px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-secondary, 36px, 400, 36px, $text-color-secondary);
+    margin-right: 316px;
+    padding-left: 0;
+  }
 }
 
 .program__description {
   border-bottom: 1px solid #d9d9d9;
   padding: 22px 0;
   margin: 7px 0 15px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-primary, 16px, 400, 24px, $text-color-secondary);
+    padding-left: 0;
+    margin-right: 387px;
+    border-bottom: none;
+  }
 }
 
 .program__link {
@@ -78,6 +118,12 @@
   &:active,
   &:active::after {
     opacity: 0.3;
+  }
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-secondary, 20px, 400, 30px, $text-color-secondary);
+    padding-left: 0;
+    gap: 25px;
   }
 }
 

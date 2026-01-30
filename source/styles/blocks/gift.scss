@@ -19,6 +19,25 @@
     display: block;
     margin: 0 auto 48px;
   }
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    background-image:
+      linear-gradient(rgba($bg-color-basic, 0.85)),
+      image-set(url("../../images/gift/gift-background-tablet@1x.webp") 1x type("image/webp"),
+      url("../../images/gift/gift-background-tablet@2x.webp") 2x type("image/webp"),
+      url("../../images/gift/gift-background-tablet@1x.png") 1x type("image/png"),
+      url("../../images/gift/gift-background-tablet@2x.png") 2x type("image/png"));
+    position: relative;
+    height: fit-content;
+    background-position: 0;
+
+    &::before {
+      margin: 0;
+      position: absolute;
+      top: auto;
+      left: 80px;
+    }
+  }
 }
 
 .gift__text {
@@ -26,4 +45,10 @@
   line-height: 20px;
   color: $text-color-tertiary;
   text-align: center;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    text-align: left;
+    padding-left: 400px;
+    padding-right: 125px;
+  }
 }

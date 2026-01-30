@@ -18,4 +18,8 @@
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
   }
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    padding: 14px 26px;
+  }
 }

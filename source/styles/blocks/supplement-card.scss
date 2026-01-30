@@ -1,12 +1,46 @@
-// .supplement-card {}
+.supplement-card {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: [title] 1fr [amount] 1fr [price] 70px;
+    gap: 25px 20px;
+    padding: 26px 40px;
+  }
+}
+
 .supplement-card__title {
   @include font-custom($font-secondary, 16px, 400, 16px, $text-color-card-title);
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-custom($font-secondary, 20px, 400, 20px, $text-color-card-title);
+    margin: 0;
+    grid-column: title;
+  }
 }
 
 .supplement-card__info-wrapper {
   line-height: 14px;
 }
-// .supplement-card__info-title {}
-// .supplement-card__info-description {}
-//.supplement-card__button {}
+
+.supplement-card__info-title {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+    grid-column: amount;
+    text-align: end;
+  }
+}
+
+.supplement-card__info-description {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+    grid-column: price;
+    margin: 0;
+    text-align: end;
+  }
+}
+
+.supplement-card__button {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    grid-column: 1 / -1;
+  }
+}

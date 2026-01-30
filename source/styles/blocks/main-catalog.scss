@@ -1,4 +1,15 @@
-// .main-catalog {}
+.main-catalog {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-bottom: 70px;
+  }
+}
+
 .main-catalog__list {
   @include list-reset;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
 }

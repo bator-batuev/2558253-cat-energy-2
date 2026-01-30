@@ -1,7 +1,17 @@
-// .supplement-catalog {}
-// .supplement-catalog__title {}
+//.supplement-catalog {}
+
+.supplement-catalog__title {
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin: 0 0 80px;
+  }
+}
+
 .supplement-catalog__list {
   @include list-reset;
   margin: 0 0 35px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    margin: 0 0 70px;
+  }
 }
 // .supplement-catalog__gift {}

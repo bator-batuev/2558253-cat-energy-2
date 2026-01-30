@@ -4,18 +4,30 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    padding: 60px 70px;
+  }
 }
 
 .contacts__title {
   @include font-custom($font-secondary, 16px, 400, 20px, $text-color-secondary);
   text-transform: uppercase;
   max-width: 170px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-secondary, 20px, 400, 26px, $text-color-secondary);
+  }
 }
 
 .contacts__address {
   font-style: normal;
   line-height: 20px;
   max-width: 160px;
+
+  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    @include font-custom($font-primary, 16px, 400, 20px, $text-color-primary);
+  }
 }
 // .contacts__map {}
 .contacts__map-img {
