@@ -4,8 +4,14 @@
   grid-template-columns: 50% 50%;
   position: relative;
 
-  @media screen and (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+  @media screen and (min-width: $tablet-width) {
     width: 560px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 
