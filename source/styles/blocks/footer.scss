@@ -8,7 +8,7 @@
   @media screen and (min-width: $desktop-width) {
     display: grid;
     grid-template-rows: 95px 1fr 106px;
-    grid-template-columns: 1fr 1320px 1fr;
+    grid-template-columns: 1fr 1220px 1fr;
   }
 }
 
@@ -24,9 +24,9 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: $desktop-width - 220px;
     margin: 0 auto;
-    padding-block: 70px;
+    padding: 55px 0 60px;
   }
 }
 

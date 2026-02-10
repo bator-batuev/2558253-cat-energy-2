@@ -1,6 +1,6 @@
 .catalog {
   @media screen and (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: $desktop-width - 220px;
   }
 }
 
@@ -38,6 +38,6 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    padding: 86px 0 40px;
+    padding: 97px 0 40px;
   }
 }

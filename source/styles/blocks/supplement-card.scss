@@ -23,6 +23,11 @@
     align-items: center;
     padding: 15px 0;
     column-gap: 40px;
+
+    &:last-child {
+      border-bottom: none;
+      padding-top: 17px;
+    }
   }
 }
 
@@ -48,7 +53,7 @@
   }
 
   @media screen and (min-width: $desktop-width) {
-    justify-self: stretch;
+    justify-content: space-between;
   }
 }
 

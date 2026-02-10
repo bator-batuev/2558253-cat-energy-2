@@ -17,4 +17,12 @@
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-secondary, 32px, 400, 32px, $text-color-secondary);
   }
+
+  @media screen and (min-width: $desktop-width) {
+    @include font-custom($font-secondary, 40px, 400, 40px, $text-color-secondary);
+
+    &::before {
+      top: 47%;
+    }
+  }
 }

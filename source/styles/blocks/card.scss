@@ -99,6 +99,14 @@
       padding-top: 31px;
     }
   }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 19px;
+
+    &--last {
+      margin: 0 auto 23px;
+    }
+  }
 }
 
 .card__info {
@@ -111,6 +119,10 @@
     border-bottom: 1px solid #cdcdcd;
     padding-top: 4px;
     padding-bottom: 3px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    padding-bottom: 7px;
   }
 }
 
@@ -146,5 +158,9 @@
 
   @media screen and (min-width: $tablet-width) {
     padding: 10px 26px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-top: 15px;
   }
 }
