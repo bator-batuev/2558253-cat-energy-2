@@ -1,14 +1,19 @@
 .supplement-card {
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
+    padding-top: 15px;
   }
 
   @media screen and (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px 20px;
-    padding: 26px 40px 27px;
+    padding: 26px 40px;
     align-items: end;
+
+    &:last-child {
+      padding-top: 26px;
+    }
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -34,10 +39,13 @@
 
 .supplement-card__info-wrapper {
   display: flex;
-  justify-self: end;
   column-gap: 50px;
   line-height: 14px;
   justify-content: space-between;
+
+  @media screen and (min-width: $tablet-width) {
+    justify-content: end;
+  }
 
   @media screen and (min-width: $desktop-width) {
     justify-self: stretch;
@@ -60,8 +68,11 @@
 }
 
 .supplement-card__button {
+  margin-top: 14px;
+
   @media screen and (min-width: $tablet-width) {
     grid-column: 1 / -1;
+    margin-top: 0;
   }
 
   @media screen and (min-width: $desktop-width) {

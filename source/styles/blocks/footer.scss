@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 30px;
+    padding: 45px 30px;
   }
 
   @media screen and (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
 }
 
 .footer__logo {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   display: block;
 
   @media screen and (min-width: $tablet-width) {
@@ -84,6 +84,6 @@
   }
 
   @media screen and (min-width: $tablet-width) {
-    width: 170px;
+    width: 163px;
   }
 }

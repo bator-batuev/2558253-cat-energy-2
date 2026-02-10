@@ -19,6 +19,10 @@
   background-color: $bg-color-secondary;
   color: $text-color-primary;
 
+  &.card__button {
+    margin-top: 13px;
+  }
+
   &:hover,
   &:focus-visible {
     background-color: #ebebeb;
