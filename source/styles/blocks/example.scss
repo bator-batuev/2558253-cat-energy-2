@@ -24,6 +24,8 @@
 
 .example__title {
   @include font-custom($font-secondary, 36px, 400, 40px, $text-color-secondary);
+  margin: 0;
+  padding-top: 24px;
 
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-secondary, 60px, 400, 60px, $text-color-secondary);
@@ -38,6 +40,9 @@
 }
 
 .example__description {
+  margin: 0;
+  padding-top: 39px;
+
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-primary, 16px, 400, 24px, $text-color-primary);
     margin: 0;
@@ -56,6 +61,8 @@
 }
 
 .example__list-wrapper {
+  padding-top: 20px;
+
   @media screen and (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;

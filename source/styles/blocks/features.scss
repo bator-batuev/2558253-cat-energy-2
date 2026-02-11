@@ -1,6 +1,6 @@
 .features__title {
   @include font-custom($font-secondary, 36px, 400, 40px, $text-color-secondary);
-  margin-top: 20px;
+  margin-top: 18px;
   margin-bottom: 40px;
 
   @media screen and (min-width: $tablet-width) {
@@ -88,6 +88,8 @@
 }
 
 .features__description {
+  margin: 0;
+
   @media screen and (min-width: $tablet-width) {
     @include font-custom($font-primary, 16px, 400, 24px, $text-color-primary);
   }
