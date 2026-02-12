@@ -2,12 +2,6 @@
   @media screen and (min-width: $tablet-width) {
     background-color: $bg-color-secondary;
   }
-
-  @media screen and (min-width: $desktop-width) {
-    & .footer__logo--text {
-      width: 128px;
-    }
-  }
 }
 
 .footer__contacts {
@@ -42,6 +36,12 @@
 
   @media screen and (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    &--text {
+      width: 128px;
+    }
   }
 }
 
